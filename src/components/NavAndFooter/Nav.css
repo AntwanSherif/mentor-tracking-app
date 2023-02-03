@@ -1,0 +1,65 @@
+p {
+  font-family: "Cairo", sans-serif;
+  font-size: 20px;
+}
+select {
+  border: none;
+  font-family: "Cairo", sans-serif;
+  font-size: 20px;
+}
+option {
+  font-family: "Cairo", sans-serif;
+  font-size: 15px;
+}
+
+body.active-modal {
+  display: block;
+}
+
+.modal {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+}
+
+.modal-content {
+  position: absolute;
+  top: 20%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  line-height: 1.4;
+  background: #ffffff;
+  padding: 14px 28px;
+  border: 1px grey solid;
+  border-radius: 5px;
+  width: 250px;
+  height: 150px;
+}
+
+.input {
+  height: 30px;
+  width: 150px;
+  border: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top: 1px grey solid;
+  border-left: 1px grey solid;
+  border-bottom: 1px grey solid;
+}
+
+.search {
+  background-color: red;
+  height: 32px;
+  width: 30px;
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.icon {
+  color: #ffffff;
+}
