@@ -5,10 +5,17 @@ export const shipmentSlice = createSlice({
   initialState: {
     shipment_no: 0,
   },
-  reducers: {},
+  reducers: {
+    new_value: (state, action) => {
+      state.shipment_no = action.payload;
+    },
+  },
 });
 
-// Action creators are generated for each case reducer function
-export const { getShipmentInfo } = counterSlice.actions;
+export const get_shipment = (state) => {
+  return state.shipment.shipment_no;
+};
+
+export const { new_value } = shipmentSlice.actions;
 
 export default shipmentSlice.reducer;

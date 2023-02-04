@@ -1,0 +1,41 @@
+.input-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-self: center;
+  justify-items: center;
+  width: 100%;
+}
+
+.title {
+  font-family: "Cairo", sans-serif;
+  font-size: 28px;
+  color: black;
+  justify-self: center;
+}
+
+.input {
+  height: 60px;
+  width: 250px;
+  border: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top: 1px grey solid;
+  border-left: 1px grey solid;
+  border-bottom: 1px grey solid;
+  padding-left: 10px;
+}
+
+.search {
+  background-color: red;
+  height: 63px;
+  width: 60px;
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.icon {
+  color: #ffffff;
+}

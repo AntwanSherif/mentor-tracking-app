@@ -2,9 +2,15 @@ import "./Nav.css";
 import logo from "../Images/logo.png";
 import { useState, useRef } from "react";
 import { BiSearch } from "react-icons/bi";
+import { useDispatch } from "react-redux";
+import { new_value } from "../../redux/shipment";
+import { Link, useNavigate } from "react-router-dom";
 
 const NavBar = () => {
   const [modal, setModal] = useState(false);
+  const [shipmentValue, setShipmentValue] = useState();
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   const showModal = () => {
     setModal(true);
@@ -57,7 +63,14 @@ const NavBar = () => {
             justifySelf: "end",
           }}
         >
-          <p onMouseOver={showModal}>Track Shipment</p>
+          <Link
+            onMouseOver={showModal}
+            className="shipments"
+            to="/tracking-shipments"
+          >
+            Track Shipments
+          </Link>
+
           <select name="" id="">
             <option value="English">En</option>
             <option value="Arabic">Ar</option>
@@ -68,14 +81,23 @@ const NavBar = () => {
       </nav>
 
       {modal && (
-        <div className="modal">
-          <div className="modal-content" onMouseLeave={closeModal}>
-            <p>Track Your Shipment</p>
-            <input type="text" placeholder="Tracking No." className="input" />
-            <button className="search">
-              <BiSearch className="icon" />
-            </button>
-          </div>
+        <div className="modal-content" onMouseLeave={closeModal}>
+          <p>Track Your Shipment</p>
+          <input
+            type="text"
+            placeholder="Tracking No."
+            className="inputNav"
+            onChange={(event) => setShipmentValue(event.target.value)}
+          />
+          <button
+            className="searchNav"
+            onClick={() => {
+              dispatch(new_value(shipmentValue));
+              navigate("/tracking-shipments");
+            }}
+          >
+            <BiSearch className="icon" />
+          </button>
         </div>
       )}
     </div>

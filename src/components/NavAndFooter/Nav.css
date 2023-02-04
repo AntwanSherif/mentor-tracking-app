@@ -1,6 +1,7 @@
 p {
   font-family: "Cairo", sans-serif;
   font-size: 20px;
+  color: black;
 }
 select {
   border: none;
@@ -14,16 +15,6 @@ option {
 
 body.active-modal {
   display: block;
-}
-
-.modal {
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  position: fixed;
 }
 
 .modal-content {
@@ -40,7 +31,7 @@ body.active-modal {
   height: 150px;
 }
 
-.input {
+.inputNav {
   height: 30px;
   width: 150px;
   border: none;
@@ -51,7 +42,7 @@ body.active-modal {
   border-bottom: 1px grey solid;
 }
 
-.search {
+.searchNav {
   background-color: red;
   height: 32px;
   width: 30px;
@@ -62,4 +53,11 @@ body.active-modal {
 
 .icon {
   color: #ffffff;
+}
+
+.shipments {
+  font-family: "Cairo", sans-serif;
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
 }

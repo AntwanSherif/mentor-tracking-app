@@ -1,8 +1,11 @@
 import NavBar from "../NavAndFooter/Nav";
 import bosta from "../Images/bosta.jpeg";
 import "./Home.css";
+import { useDispatch, useSelector } from "react-redux";
 
 const Home = () => {
+  const { shipment_no } = useSelector((state) => state.shipment);
+  const dispatch = useDispatch();
   return (
     <>
       <NavBar />
