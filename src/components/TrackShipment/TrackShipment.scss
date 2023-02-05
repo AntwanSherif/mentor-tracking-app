@@ -1,0 +1,245 @@
+.input-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-self: center;
+  justify-items: center;
+  width: 100%;
+  margin-top: 7%;
+}
+
+.title {
+  font-family: "Cairo", sans-serif;
+  font-size: 28px;
+  color: black;
+  justify-self: center;
+}
+
+.input {
+  height: 60px;
+  width: 250px;
+  border: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top: 1px grey solid;
+  border-left: 1px grey solid;
+  border-bottom: 1px grey solid;
+  padding-left: 10px;
+}
+
+.search {
+  background-color: red;
+  height: 63px;
+  width: 60px;
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.icon {
+  color: #ffffff;
+}
+
+.info-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-self: center;
+  justify-items: center;
+  width: 100%;
+}
+
+.shipment-no {
+  font-family: "Cairo", sans-serif;
+  font-size: 15px;
+  color: grey;
+  justify-self: center;
+  margin-bottom: 0;
+}
+
+.stateTitle {
+  font-family: "Cairo", sans-serif;
+  font-size: 40px;
+  line-height: 56px;
+  letter-spacing: 0;
+  color: black;
+  font-weight: bolder;
+  justify-self: center;
+  margin: 0 0 10px 0;
+}
+
+.statusBar-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-self: center;
+  width: 50%;
+}
+
+.statusBar {
+  justify-self: center;
+  width: 90%;
+  border: 3px solid;
+}
+
+.firstBar {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.lastBar {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.delivered {
+  border-color: #04646d;
+}
+
+.returned {
+  border-color: #c9f2f9;
+}
+
+.statusInfo {
+  font-family: "Cairo", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0;
+  font-weight: 500;
+}
+
+.line-break {
+  border: 0.3px #e4e7ec solid;
+  width: 90%;
+}
+.ul-style {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  &:before {
+    content: "";
+    display: inline-block;
+    width: 2px;
+    background: #d0d5dd;
+    position: absolute;
+    left: 3px;
+    top: 5px;
+    height: calc(100% - 10px);
+  }
+  .li-style {
+    position: relative;
+    padding-left: 15px;
+    margin-bottom: 15px;
+    &:before {
+      content: "";
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      background: #d0d5dd;
+      position: absolute;
+      left: 0;
+      top: 5px;
+      border-radius: 10px;
+    }
+  }
+}
+
+.track_info {
+  display: grid;
+  width: 90%;
+  justify-self: center;
+}
+
+.track_title {
+  font-family: "Cairo", sans-serif;
+  color: #667085;
+  font-size: 17px;
+  margin: 0;
+  margin-top: 3%;
+}
+.activity-date {
+  margin: 0;
+  font-family: "Cairo", sans-serif;
+  color: #111619;
+  font-size: 17px;
+}
+
+.wrapper {
+  border: 1px grey solid;
+  border-radius: 4px;
+  width: 30%;
+}
+
+.activity-status {
+  margin: 0;
+  font-family: "Cairo", sans-serif;
+  font-size: 14px;
+  padding: 0 2%;
+}
+
+.activity-hours {
+  margin: 0;
+  font-family: "Cairo", sans-serif;
+  color: #667085;
+  font-size: 14px;
+  padding-left: 2%;
+}
+
+.error-wrapper {
+  display: grid;
+  grid-template-columns: 0.1fr 1fr;
+  justify-self: center;
+  width: 40%;
+  margin-top: 1%;
+  border: 1px red solid;
+  border-radius: 3px;
+  background-color: #fbdfdd;
+}
+.error-icon {
+  color: red;
+  justify-self: center;
+  margin-top: 20%;
+}
+.error-message {
+  justify-self: center;
+  margin: 0;
+  padding: 1.5%;
+  font-family: "Cairo", sans-serif;
+  font-size: 13px;
+}
+/*******************************************************************/
+
+@media (max-width: 1181px) {
+  .wrapper {
+    width: 50%;
+  }
+  .activity-status {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .input {
+    height: 35px;
+    width: 150px;
+  }
+
+  .search {
+    background-color: red;
+    height: 36px;
+    width: 32px;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+
+  .statusInfo {
+    width: 70%;
+  }
+
+  .wrapper {
+    width: 70%;
+  }
+}

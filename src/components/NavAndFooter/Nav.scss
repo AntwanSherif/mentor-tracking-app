@@ -1,4 +1,4 @@
-p {
+.nav-links {
   font-family: "Cairo", sans-serif;
   font-size: 20px;
   color: black;
@@ -17,7 +17,7 @@ body.active-modal {
   display: block;
 }
 
-.modal-content {
+.modal-container {
   position: absolute;
   top: 20%;
   left: 75%;
@@ -57,7 +57,28 @@ body.active-modal {
 
 .shipments {
   font-family: "Cairo", sans-serif;
-  font-size: 20px;
+  font-size: 17px;
   color: black;
+  align-self: center;
   text-decoration: none;
+  margin: 0;
 }
+
+/* ul {
+  display: grid;
+  grid-template-columns: 0.3fr 0.3fr 0.3fr 0.3fr 1fr;
+  list-style: none;
+} */
+
+.nav-buttons {
+  border: 0;
+  background-color: transparent;
+
+  align-self: center;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: black;
+  font-family: "Cairo", sans-serif;
+}
+
+/*************************************/

@@ -30,7 +30,7 @@ img {
   align-self: center;
 }
 
-button {
+.start-button {
   width: 15%;
   height: 40px;
   color: white;
@@ -40,4 +40,11 @@ button {
   font-family: "Cairo", sans-serif;
   font-size: 15px;
   font-weight: bold;
+}
+
+/********************************************/
+@media (max-width: 1180px) {
+  img {
+    display: none;
+  }
 }

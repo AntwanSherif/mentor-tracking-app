@@ -21,7 +21,7 @@ const Home = () => {
               <br /> all through innovative tech-solutions and
               <br /> efficient operations.
             </p>
-            <button>Start Now</button>
+            <button className="start-button">Start Now</button>
           </div>
           <img src={bosta} alt="" />
         </div>
